@@ -1,0 +1,53 @@
+# Medical Coding Specialist – Portfolio Website
+
+## Project Overview
+A professional and responsive portfolio website for Dr. Kalsoom Shahzad, a Medical Coding and Prior Authorization Specialist.
+
+The website highlights professional experience, medical coding expertise, healthcare services, educational background, and contact information.
+
+## Technologies Used
+- HTML5 – Website structure
+- CSS3 – Styling and responsive design
+- JavaScript – Interactive functionality
+
+## Features
+
+- **Professional Home Section:** Introduction and professional profile.
+- **About Section:** Read More / Read Less functionality.
+- **Core Expertise:** Filterable expertise cards.
+- **Services & Rates:** Interactive service selection and automatic price calculation.
+- **Professional Experience:** Experience table with hover highlighting.
+- **Education Section:** Academic qualifications.
+- **Contact Form:** User input validation and success messages.
+- **Discount Calculator:** Student and senior discount eligibility based on birth year.
+- **Dark / Light Mode:** Theme toggle functionality.
+- **Live Status Banner:** Displays open or closed status based on the current time.
+- **Character Counter:** Tracks remaining characters in the special request field.
+
+## Project Structure
+
+```text
+Medical-Portfolio/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## How to Run the Project
+
+1. Download or clone the repository.
+2. Open the project folder in VS Code.
+3. Make sure all four project files are in the same folder.
+4. Open `index.html` in your browser.
+
+## Project Purpose
+
+This project demonstrates practical frontend web development skills, including webpage structuring, styling, DOM manipulation, event handling, form validation, and interactive user interface development.
+
+## Author
+Javeria Shehzad
+
+## License
+This project is created for educational and portfolio purposes.

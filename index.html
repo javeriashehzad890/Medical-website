@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dr. Kalsoom Shahzad - Medical Coding Specialist</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <!-- Task 8: status banner sits right under the main heading (h1) -->
+        <div class="header-brand">
+            <h1 class="site-title">
+                Dr. Kalsoom Shahzad
+            </h1>
+            <p id="status-banner"></p>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#services">Services</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <!-- Task 3: theme toggle button at the top of the page -->
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-pressed="false">Toggle Light/Dark Mode</button>
+
+    </header>
+    <main>
+        <section id="home">
+
+            <img
+                src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><circle cx='75' cy='75' r='75' fill='%2317324D'/><text x='50%25' y='50%25' font-family='Arial' font-size='50' fill='white' text-anchor='middle' dy='.35em'>KS</text></svg>"
+                alt="Dr. Kalsoom Shahzad"
+                class="profile-img fade-in-up delay-1"
+            >
+
+            <h2 class="fade-in-up delay-2">
+                Medical Coding &amp; Prior Authorization Specialist
+            </h2>
+
+            <p class="fade-in-up delay-3">
+                Detail-oriented medical coder and pharmacist with hands-on
+                experience in ICD-10, CPT, and HCPCS coding. Skilled in
+                medical scribing, virtual medical assistance, and managing
+                Prior Authorization for Spravato (esketamine) and
+                interventional pain management.
+            </p>
+
+            <a href="#contact" class="btn fade-in-up delay-4">
+                Contact Me
+            </a>
+
+            <!-- Heartbeat / Pulse Icon -->
+            <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 50'%3E%3Cpolyline points='0,25 40,25 55,5 70,45 85,15 100,25 200,25' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+                alt="Heartbeat pulse line"
+                class="pulse-icon fade-in-up delay-4"
+            >
+
+        </section>
+
+        <!-- Task 6: Read More toggle (About section) -->
+        <section id="about">
+
+            <h2 class="fade-in-up delay-1">
+                About Me
+            </h2>
+
+            <article class="fade-in-up delay-2">
+                <p>
+                    With years of hands-on experience in medical coding and healthcare administration, I help clinics and hospitals stay compliant, reduce claim denials, and manage Prior Authorization efficiently.
+                    <span id="about-extra" hidden>I bring clinical knowledge as a pharmacist and coding expertise together to bridge the gap between providers and payers.</span>
+                </p>
+            </article>
+            <button type="button" id="read-more" class="btn btn-solid" aria-expanded="false">Read More</button>
+
+            <div class="about-buttons fade-in-up delay-3">
+
+                <a href="#experience" class="btn btn-solid">
+                    View Experience
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Get in Touch
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Task 7: Live category filter -->
+        <section id="expertise">
+
+            <h2>
+                Core Expertise
+            </h2>
+
+            <div class="expertise-filters" aria-label="Filter expertise">
+                <button type="button" class="filter-button active" data-filter="all">All</button>
+                <button type="button" class="filter-button" data-filter="coding">Medical Coding</button>
+                <button type="button" class="filter-button" data-filter="assistant">Virtual Assistant</button>
+                <button type="button" class="filter-button" data-filter="authorization">Prior Authorization</button>
+            </div>
+            <div class="card-container">
+
+                <article class="card" data-category="coding">
+
+                    <h3>
+                        Medical Coding
+                    </h3>
+
+                    <p>
+                        Accurate ICD-10, CPT, and HCPCS coding for internal
+                        medicine, emergency care, and pain management, with
+                        regular audits for compliance.
+                    </p>
+
+                </article>
+
+
+                <article class="card" data-category="assistant">
+
+                    <h3>
+                        Virtual Medical Assistant
+                    </h3>
+
+                    <p>
+                        Remote patient communication, prescription refill
+                        coordination, and appointment scheduling for care
+                        teams.
+                    </p>
+
+                </article>
+
+
+                <article class="card" data-category="authorization">
+
+                    <h3>
+                        Prior Authorization
+                    </h3>
+
+                    <p>
+                        End-to-end PA management for Spravato and
+                        interventional pain management, including
+                        Verification of Benefits and denial appeals.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Task 4: Order total calculator (checkbox list) -->
+        <section id="services">
+
+            <h2>
+                Services &amp; Rates
+            </h2>
+
+            <p>
+                Select the services you need to see an estimated total.
+            </p>
+
+            <ul class="service-list">
+                <li>
+                    <label>
+                        <input type="checkbox" class="service-checkbox" data-price="50">
+                        Medical Coding Audit - $50
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="service-checkbox" data-price="30">
+                        Prior Authorization Request - $30
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="service-checkbox" data-price="15">
+                        Virtual Medical Assistance (per hour) - $15
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="service-checkbox" data-price="40">
+                        Coding Team Training Session - $40
+                    </label>
+                </li>
+            </ul>
+
+            <p id="total">Total: $0</p>
+
+        </section>
+
+        <!-- Task 2: Table row highlighting (mouseover / mouseout) -->
+        <section id="experience">
+
+            <h2>
+                Professional Experience
+            </h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Role</th>
+                            <th>Duration</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>
+                                Backup Team Lead, Coding
+                            </td>
+
+                            <td>
+                                 Present
+                            </td>
+                     </tr>
+
+                        <tr>
+                            <td>
+                                Medical Coding &amp; PA Specialist
+                            </td>
+
+                            <td>
+                                2023 - present
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Hospital Pharmacist
+                            </td>
+
+                            <td>
+                                2018 - 2023
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <h3>
+                Key Responsibilities
+            </h3>
+
+            <ul class="responsibility-list">
+
+                <li>
+                    Manage a coding team and deliver training on coding workflows.
+                </li>
+
+                <li>
+                    Review and audit coding practices for payer compliance.
+                </li>
+
+                <li>
+                    Mentor junior coders and coordinate with physicians.
+                </li>
+
+            </ul>
+
+        </section>
+        <section id="education">
+
+            <h2>
+                Education
+            </h2>
+
+            <ol type="A">
+
+                <li>
+                    Doctor of Pharmacy (Pharm.D) -
+                    Hamdard University (2018 - 2023)
+                </li>
+
+                <li>
+                    Intermediate (Pre-Medical) -
+                    BISE Rawalpindi (2018)
+                </li>
+
+                <li>
+                    Matriculation (Science) -
+                    BISE Rawalpindi (2016)
+                </li>
+
+            </ol>
+
+        </section>
+        <section id="contact">
+
+            <h2>
+                Get in Touch
+            </h2>
+
+            <p>
+                Email:
+                <a href="mailto:kalsoomshahzad603@gmail.com">
+                    kalsoomshahzad603@gmail.com
+                </a>
+            </p>
+
+            <p>
+                Phone:
+                <a href="tel:+923345543317">
+                    +92 334 5543317
+                </a>
+            </p>
+
+            <!-- Tasks 1, 5 and 9 live in this form -->
+            <form id="contact-form">
+
+                <!-- Username (Task 1) -->
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Your name"
+                    required
+                >
+
+                <!-- Email (Task 1) -->
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+
+                <!-- Birth year (Task 5) -->
+                <label for="birth-year">
+                    Birth Year (for student/senior discount)
+                </label>
+
+                <input
+                    type="text"
+                    id="birth-year"
+                    name="birth-year"
+                    placeholder="e.g. 2002"
+                    maxlength="4"
+                >
+
+                <label for="message">
+                    Message
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Write your message"
+                ></textarea>
+
+                <!-- Special request + character counter (Task 9) -->
+                <label for="special-notes">Special Request</label>
+                <textarea id="special-notes" name="special-notes" rows="3" maxlength="100" placeholder="Any special instructions?"></textarea>
+                <small id="notes-count" aria-live="polite">100 characters remaining</small>
+
+                <p>
+                    Preferred Contact Method:
+                </p>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="contact-method"
+                        value="email"
+                        checked
+                    >
+                    Email
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="contact-method"
+                        value="phone"
+                    >
+                    Phone
+                </label>
+
+                <label>
+
+                    <input
+                        type="checkbox"
+                        name="updates"
+                        value="yes"
+                    >
+
+                    I would like to receive updates
+
+                </label>
+                <button type="submit">
+                    Send Message
+                </button>
+
+                <!-- Messages shown after submit -->
+                <p id="form-success" class="form-success" role="status" hidden></p>
+                <p id="discount-message" class="form-success" role="status" hidden></p>
+
+            </form>
+
+        </section>
+
+    </main>
+    <footer>
+
+        <p>
+            &copy; 2026 Dr. Kalsoom Shahzad.
+            All rights reserved.
+        </p>
+</footer>
+</body>
+</html>
